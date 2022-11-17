@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universe for all</title>
+    <link rel="icon" href="Assets/icons/favicon.ico">
+    <link rel="stylesheet" href="Styles/style.css" type="text/css">
+</head>
+<body>
+    <header class="_rows">
+        <div class="_rows logo">
+            <img class="icon" src="Assets/icons/rocket.png" alt="spacial rocket .icon">
+            <h1>Universe for all</h1>
+        </div>
+
+        <div class="_rows searchBox">
+            <input id="inputDate" class="date" type="Date">
+            <button class="search" type="submit" onclick="loadToken(getDate());">search</button>
+        </div>     
+    </header>
+    <main class="_rows bg" style="background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/main_image_star-forming_region_carina_nircam_final-1280.jpg')">
+
+        <div id="info" class="_rows ">
+            <img name="invisible" id="visible" class="icon select" src="Assets/icons/invisible.png" alt="eye .icon" onclick="changeVisible();">
+        </div>
+
+        <section class="content">
+        </section>
+    </main>
+
+    <script src="JS/Controller/visible.js"></script>
+    <script src="JS/Controller/request.js"></script>
+</body>
+</html>
