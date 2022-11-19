@@ -21,10 +21,7 @@ function requestData(token, date){
     fetch(url)
     .then(resp => resp.json())
     .then(data => {
-        console.log(data);
-
         addContent(data);
-
     })
 }
 
