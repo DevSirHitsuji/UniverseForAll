@@ -106,6 +106,23 @@ header{
     opacity: 0.7;
 }
 
+#bgDownload{
+    background: linear-gradient(var(--primaryColor), var(--secondColor));    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 40px;
+
+    border-radius: 5px;
+
+    position: absolute;
+    right: 10px;
+    top: 120px;
+
+}
+
+
 
 @media (max-width: 1024px) {
     .content{
@@ -135,6 +152,10 @@ header{
 
     #info{
         top: 80px;
+    }
+
+    #bgDownload{
+        top: 150px;
     }
 
     .search{

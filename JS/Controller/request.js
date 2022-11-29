@@ -1,6 +1,8 @@
 
 function addContent(data){
     const content = document.getElementsByClassName("content");
+    const linkDonwload = document.getElementById("downloadImage");
+
     content[0].innerHTML = "";
 
     let tittle = document.createElement("h2");
@@ -12,6 +14,8 @@ function addContent(data){
     content[0].appendChild(text);
 
     document.getElementsByClassName("bg")[0].style = "background-image: url("+data.hdurl+")";
+    console.log(linkDonwload)
+    linkDonwload.href = data.hdurl;
 
 }
 
